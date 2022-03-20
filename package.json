@@ -1,0 +1,21 @@
+{
+  "name": "discord_bored_bot",
+  "version": "1.0.0",
+  "description": "A bot that kills boredom giving you new websites to explore. Inspired by and courtesy of BoredButton",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "devStart": "nodemon index.js"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cheerio": "^1.0.0-rc.10",
+    "discord.js": "^13.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
