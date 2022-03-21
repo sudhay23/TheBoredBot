@@ -23,9 +23,11 @@ client.on("ready", () => {
 
   if (guild) {
     //   Testing Guild specific commands
+    console.log("In Development...");
     commands = guild.commands;
   } else {
     //   Production: Public commands on all active guilds
+    console.log("In Production...");
     commands = client.application?.commands;
   }
 
@@ -34,12 +36,16 @@ client.on("ready", () => {
 
   //   Listen for interactions
   client.on("interactionCreate", async (interaction) => {
-    if (interaction.isCommand()) {
-      const { commandName, options } = interaction;
-      await handleCommands(interaction, commandName, options);
-    } else {
-      // Nothing to handle for now
-      return;
+    try {
+      if (interaction.isCommand()) {
+        const { commandName, options } = interaction;
+        await handleCommands(interaction, commandName, options);
+      } else {
+        // Nothing to handle for now
+        return;
+      }
+    } catch (error) {
+      console.error("Something happened...", error);
     }
   });
 });

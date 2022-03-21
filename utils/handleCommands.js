@@ -3,9 +3,12 @@ import getBoredLink from "./getBoredLink.js";
 
 export default async (interaction, commandName, options) => {
   if (commandName === "help") {
-    interaction.reply({
-      content: "HELP_TODO",
+    await interaction.deferReply({
       ephemeral: true,
+    });
+
+    await interaction.editReply({
+      content: "HELP_TODO",
     });
   } else if (commandName === "contribute") {
     const contributeEmbed = new MessageEmbed()
@@ -24,10 +27,17 @@ export default async (interaction, commandName, options) => {
       })
       .setImage("https://i.imgur.com/7jPIDbZ.jpeg");
 
-    interaction.reply({
+    await interaction.deferReply({
+      ephemeral: false,
+    });
+
+    await interaction.editReply({
       embeds: [contributeEmbed],
     });
   } else if (commandName === "bored") {
+    await interaction.deferReply({
+      ephemeral: false,
+    });
     const [boredUrl, boredUrlTitle, boredUrlDesc] = await getBoredLink();
     const boredScreenshotLink = `http://image.thum.io/get/${boredUrl}`;
     const boredEmbed = new MessageEmbed()
@@ -55,7 +65,7 @@ export default async (interaction, commandName, options) => {
       ])
       .setImage(boredScreenshotLink);
 
-    interaction.reply({
+    await interaction.editReply({
       embeds: [boredEmbed],
     });
   }
