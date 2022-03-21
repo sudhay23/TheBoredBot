@@ -14,10 +14,14 @@ Anybody of the server can use the `/bored` command and the bot gives you one coo
 
 ---
 
-## Pull Requests
+## Quick Demo
 
-All are welcome to suggest new features or raise issues you may have faced. Let's fix 'em together :)
+Here's a quick demo as to how to use the bot once invited to your cool server
+
+## ![Bot Demo](https://i.imgur.com/zB9eim9.gif)
 
 ---
 
-## Quick Demo
+## Pull Requests
+
+All are welcome to suggest new features or raise issues you may have faced. Let's fix 'em together :)
