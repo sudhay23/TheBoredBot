@@ -1,4 +1,5 @@
 import { MessageEmbed } from "discord.js";
+import getBoredLink from "./getBoredLink.js";
 
 export default async (interaction, commandName, options) => {
   if (commandName === "help") {
@@ -25,6 +26,35 @@ export default async (interaction, commandName, options) => {
 
     interaction.reply({
       embeds: [contributeEmbed],
+    });
+  } else if (commandName === "bored") {
+    const [boredUrl, boredUrlTitle, boredUrlDesc] = await getBoredLink();
+    const boredScreenshotLink = `http://image.thum.io/get/${boredUrl}`;
+    const boredEmbed = new MessageEmbed()
+      .setColor("#00fff3")
+      .setAuthor({
+        name: "TheBoredBot",
+        iconURL: "https://i.imgur.com/GKWq2F6.jpeg",
+        url: "https://top.gg/bot/954588820593049651", //TODO-CHANGE
+      })
+      .setTitle("TheBoredBot on Discord")
+      .setURL("https://top.gg/bot/954588820593049651")
+      .addFields([
+        {
+          name: "Check this out!",
+          value: `**\`${
+            interaction.user.username
+          }\`** got bored at _${new Date().toLocaleString()}_`,
+        },
+        {
+          name: boredUrlTitle,
+          value: boredUrlDesc || "No Description",
+        },
+      ])
+      .setImage(boredScreenshotLink);
+
+    interaction.reply({
+      embeds: [boredEmbed],
     });
   }
 };
