@@ -41,14 +41,16 @@ export default async (interaction, commandName, options) => {
       .setURL("https://top.gg/bot/954588820593049651")
       .addFields([
         {
-          name: "Check this out!",
+          name: "Check this cool website out!",
           value: `**\`${
             interaction.user.username
           }\`** got bored at _${new Date().toLocaleString()}_`,
         },
         {
           name: boredUrlTitle,
-          value: boredUrlDesc || "No Description",
+          value: `[Go to website](${boredUrl})\n${
+            boredUrlDesc || "No Description"
+          }`,
         },
       ])
       .setImage(boredScreenshotLink);
