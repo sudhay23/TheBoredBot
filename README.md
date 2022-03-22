@@ -33,3 +33,4 @@ Here's a quick demo as to how to use the bot once invited to your cool server
 ## Pull Requests
 
 You are welcome to suggest new features or raise issues you may have faced. Let's fix 'em together :)
+[Check this link out for Issues](https://github.com/sudhay23/TheBoredBot/issues)
