@@ -54,5 +54,19 @@ client.on("ready", () => {
 client.login(process.env.DISCORD_BOT_TOKEN);
 
 // SANDBOX
+// Placeholder HTTP server to handle 'Home' route
+import * as http from "http";
+const httpServer = http.createServer((req, res) => {
+  res
+    .setHeader("Content-Type", "text/html")
+    .write(
+      "<h2>The Bored Bot is Online</h2><a href='https://discord.com/api/oauth2/authorize?client_id=955456643745845288&permissions=534723950656&scope=applications.commands%20bot'>Invite Me to Your Discord Server!!</a>"
+    );
+  res.end();
+});
+
+httpServer.listen(process.env.PORT || 5000, () => {
+  console.log("Placeholder HTTP Server running...");
+});
 
 // console.log(await getBoredLink());
