@@ -29,11 +29,11 @@ export default async (interaction, commandName, options) => {
     const contributeEmbed = new MessageEmbed()
       .setColor("#00ffa7")
       .setTitle("TheBoredBot on GitHub")
-      .setURL("https://github.com/sudhay23/TheBoredBot") //TODO-MakePublic
+      .setURL("https://github.com/sudhay23/TheBoredBot")
       .setAuthor({
         name: "TheBoredBot",
         iconURL: "https://i.imgur.com/GKWq2F6.jpeg",
-        url: "https://top.gg/bot/954588820593049651", //TODO-CHANGE
+        url: "https://top.gg/bot/955456643745845288",
       })
       .addFields({
         name: "Awesome..You wished to contribute 🎉🥳",
@@ -60,10 +60,10 @@ export default async (interaction, commandName, options) => {
       .setAuthor({
         name: "TheBoredBot",
         iconURL: "https://i.imgur.com/GKWq2F6.jpeg",
-        url: "https://top.gg/bot/954588820593049651", //TODO-CHANGE
+        url: "https://top.gg/bot/955456643745845288",
       })
       .setTitle("TheBoredBot on Discord")
-      .setURL("https://top.gg/bot/954588820593049651")
+      .setURL("https://top.gg/bot/955456643745845288")
       .addFields([
         {
           name: "Check this cool website out!",

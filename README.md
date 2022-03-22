@@ -8,6 +8,10 @@ A bot that kills boredom giving you new websites to explore.
 
 # [![Invite me](https://img.shields.io/static/v1?style=flat&logo=discord&logoColor=FFF&label=&message=Bored?%20Invite%20Me&color=7289DA)](https://discord.com/api/oauth2/authorize?client_id=955456643745845288&permissions=534723950656&scope=applications.commands%20bot)
 
+# [![Bot Status](https://top.gg/api/widget/status/955456643745845288.svg)](https://top.gg/bot/955456643745845288)
+
+# [![Server Presence](https://top.gg/api/widget/servers/955456643745845288.svg)](https://top.gg/bot/955456643745845288)
+
 ## What it can do?
 
 Anybody of the server can use the `/bored` command and the bot gives you one cool website to check out which you may never have seen before
