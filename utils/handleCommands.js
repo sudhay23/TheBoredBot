@@ -12,10 +12,17 @@ export default async (interaction, commandName, options) => {
       **TheBoredBot**
       A bot that kills boredom giving you new websites to explore. Inspired by and courtesy of BoredButton
       
-      [Invite me to another server](https://discord.com/api/oauth2/authorize?client_id=955456643745845288&permissions=534723950656&scope=applications.commands%20bot)
+      **[Invite me to another server](https://discord.com/api/oauth2/authorize?client_id=955456643745845288&permissions=534723950656&scope=applications.commands%20bot)**
       
       ***What it can do?***
        - Anybody of the server can use the \`/bored\` command and the bot gives you one cool website to check out which you may never have seen before
+
+      ***Help Command*** - \`/help\`
+       - Shows this help message
+       
+      ***Contribute Command*** - \`/contribute\`
+       - Shows a link to our GitHub Repository
+
       `,
     });
   } else if (commandName === "contribute") {
